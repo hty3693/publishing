@@ -1,0 +1,195 @@
+
+@charset "utf-8";
+
+/************************************************************************
+ * 파일명	: common.css
+ * 설명	: 공통 CSS
+ * 작성자	: heydey
+ * 작성일	: 2017.05.16
+************************************************************************/
+/* Complete */
+
+
+/* common */
+html, body	{background-color:#fff;}
+body, p, ul, ol, li, dl, dt, dd, form, table, th, td, fieldset, input, textarea, select, button, h1, h2, h3, h4, h5, h6, pre	{margin:0; padding:0; -webkit-text-size-adjust:none;}
+input, textarea, select, table, button	{color:#1a1a1a; font-family:Helvetica, Arial, sans-serif;}
+body	{font-family:Helvetica, Arial, sans-serif !important; color:#1a1a1a !important; margin:0 !important; font-size:16px; line-height:26px !important; background-color:#fff !important}
+fieldset, img	{border:0;}
+table	{width:100%; border:none; border-collapse:collapse;}
+table tr th, table tr td	{border:none;}
+legend, caption	{visibility:hidden; width:0; height:0; font-size:0; line-height:0;}
+ul, ol, li	{list-style:none;}
+a	{color:#1a1a1a; text-decoration:none;}
+a:hover, a:focus {text-decoration: none;  outline: 0;}
+em	{font-style:normal;}
+form	{display:inline;}
+section, article, header, footer, nav, aside, hgroup	{display:block;}
+h1, h2, h3, h4, h5, h6	{font-family: "Domaine", serif; font-weight:normal;}
+p{margin:0 0 20px;}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* skip navigation */
+.skip_nav a			{display:block; position:absolute; z-index:1000; top:-1000em; left:0; padding:10px; background-color:#fff;}
+.skip_nav a:focus	{top:0;}
+
+/* -- form -- */
+input	{position:relative;}
+label	{vertical-align:middle;}
+input, textarea, img		{
+	border:none; border-radius:0; vertical-align:middle;
+	appearance: none;
+	-moz-appearance:none; /* Firefox */
+	-webkit-appearance:none; /* Safari and Chrome */
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color:#808080;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color:#808080;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color:#808080;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:#808080;
+}
+
+/* select */
+select	{border:none; border-radius:0; vertical-align:middle; -webkit-appearance: none; appearance: none; width:100%; background:url('/images/p/common/bg_select.gif') no-repeat right 50%; vertical-align:middle;}
+select::-ms-expand {	display: none; }
+
+/* input */
+input	{margin:0; box-sizing:border-box; -moz-box-sizing:border-box; vertical-align:middle;}
+input[type="text"], input[type="search"], input[type="password"], input[type="email"], input[type="tel"]	{height:48px; line-height:48px; color:#808080; font-size:16px; line-height:58px; background:#fff; border:1px solid #d9d9d9; padding-left:10px}
+input[type="text"]:focus, input[type="search"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus	{}
+input[type="text"]:disabled, input[type="search"]:disabled, input[type="password"]:disabled, input[type="email"]:disabled, input[type="tel"]:disabled	{}
+
+/* check box */
+input[type="checkbox"] {background:url('/images/p/common/check_checked.gif') no-repeat 0 0; vertical-align:middle; width:16px;height:16px}
+input[type="checkbox"]:checked	{background-position:0 -18px}
+input[type="checkbox"]:disabled	{}
+input[type="checkbox"]+label	{margin-left:15px; color:#808080}
+input[type="radio"]:checked+label, input[type="radio"]:checked+label	{color:#000}
+
+
+/* radio */
+input[type="radio"]	{background:url('/images/p/common/radio_checked.gif') no-repeat 0 0; vertical-align:middle; width:16px;height:16px}
+input[type="radio"]+label	{margin-left:11px; color:#808080}
+input[type="radio"]:checked	{background-position:0 -18px}
+
+/* textarea */
+textarea	{width:100%; padding:12px; border-top:1px solid #ccc; border-right:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; border-left:1px solid #ccc; background-color:#fff; font-size:14px; line-height:20px; resize:none; box-sizing:border-box; -moz-box-sizing:border-box;}
+
+/* 버튼 정렬 */
+
+/* floating */
+.clfix:after		{content: ""; display: block; height: 0px; clear: both; visibility: hidden; font-size:0;}
+.clfix			{display: inline-block;}
+* html .clfix	{height: 1%;} /* Hides from IE-mac */
+.clfix			{display: block;}
+.clfix			{zoom:1;} /*for IE 5.5-7*/
+.fl_left			{float:left;}
+.fl_right		{float:right;}
+.t_left		{text-align:left !important}
+.t_right	{text-align:right !important}
+.t_center	{text-align:center !important}
+
+.txt_fmc	{display:inline-block; width:3%; color:#ccc; font-size:10px; text-align:center}
+
+/* etc */
+.none	{display:none !important;}
+.hidden	{display:block; font-size:0; color:transparent; text-indent:-9999px; line-height:0 !important;} /* 대체텍스트 숨김 */
+
+/* 기본 button */
+button	{border:0; cursor:pointer}
+.base_btn	{position:relative; height:58px; text-align:center; color:#000; border:1px solid #000; font-family:"Circular_PB"; font-size:14px; line-height:58px;
+	background:#f2f2f2;
+	box-shadow: inset 0 0 0 0 #31302B;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+.base_btn:hover	{color:#fff;
+	box-shadow: inset 240px 0 0 0 #000;
+}
+
+/* color */
+.fc_defult	{color:#333;}
+.fc_gray	{color:#999}
+.fc_bgray	{color:#666}
+.fc_blue	{color:#0058a0}
+.fc_red		{color:#d7182a !important}
+.fc_white	{color:#fff}
+
+/* 블릿 */
+
+
+/* margin, padding */
+.mt0	{margin-top:0 !important}
+.mt5	{margin-top:5px;}
+.mt10	{margin-top:10px;}
+.mt20	{margin-top:20px !important;}
+
+.ml10	{margin-left:10px}
+.ml30	{margin-left:30px}
+
+.mr5	{margin-right:5px}
+.mr10	{margin-right:10px}
+
+.pdt20	{padding-top:20px !important;}
+.pdt60	{padding-top:60px !important;}
+
+
+/* font */
+.f13 {font-size:13px}
+.f16 {font-size:16px; line-height:18px;}
+
+/* title */
+h1.tit_l	{font-size: 63px;  letter-spacing: 0; line-height: 75px;  margin-bottom: 15px;}
+h2.tit_m	{font-size: 42px;  letter-spacing: 0.025em; line-height: 50px;  margin-bottom: 20px;}
+.tit_sm	{font-size:19px; line-height: 23px; margin-bottom:20px; letter-spacing: 0.025em;}
+.tit_xs	{font-size:15px; line-height: 18px; margin-bottom:20px; letter-spacing: 0.115em;}
+
+/* text */
+.item p{font-size:15px; line-height: 25px; color: #4d4d4d;}
+
+/* item list */
+.item_cont	{text-align: center;}
+.item_list	{margin-bottom:55px; font-family: "Tw Cen W01 Light", sans-serif; font-size: 12px; text-transform: uppercase; letter-spacing: 0.115em;}
+.item_list li	{display:inline-block;}
+.item_list a	{text-decoration:none; display:inline-block; position:relative; font-size:12px; line-height: 16px; border-bottom:1px solid #D17D74;}
+.item_list a:after	{content: "";  position: absolute;  bottom: -1px;  left: 0;  right: 0;  margin: 0 auto;  width: 0;  border-bottom: 1px solid #D17D74;
+	-webkit-transition: width ease-out 350ms;
+	transition: width ease-out 350ms;
+	-webkit-transition-delay: 50ms;
+	transition-delay: 50ms;
+}
+
+/* image */
+.item_img	{position:relative; background: #f2f2f2;}
+
+/* divide */
+.divd_wrap	{*zoom:1; margin:0 -20px;}
+.divd_wrap:after	{display:block; content:""; clear:both;}
+.divd_wrap > div{float: left;}
+.divd_wrap.col-2 > div{
+	width: 50%;
+	width: -moz-calc(50% - 40px);
+	width: -webkit-calc(50% - 40px);
+	width: -o-calc(50% - 40px);
+	width: calc(50% - 40px);
+	margin:0 20px;
+}
+
+.divd_wrap.col-3 > div{
+	width: 33.3333%;
+	width: -moz-calc(33.3333% - 40px);
+	width: -webkit-calc(33.3333% - 40px);
+	width: -o-calc(33.3333% - 40px);
+	width: calc(33.3333% - 40px);
+	margin:0 20px;
+}
