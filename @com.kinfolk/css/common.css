@@ -11,7 +11,7 @@
 
 
 /* common */
-html, body	{background-color:#fff; overflow-x: hidden;}
+html, body	{background-color:#fff; overflow-x: hidden; font-family: "Feijoa", serif;}
 body, p, ul, ol, li, dl, dt, dd, form, table, th, td, fieldset, input, textarea, select, button, h1, h2, h3, h4, h5, h6, pre	{margin:0; padding:0; -webkit-text-size-adjust:none;}
 input, textarea, select, table, button	{color:#1a1a1a; font-family:Helvetica, Arial, sans-serif;}
 body	{font-family:Helvetica, Arial, sans-serif !important; color:#1a1a1a !important; margin:0 !important; font-size:15px; line-height:21px !important; background-color:#fff !important}
@@ -157,6 +157,20 @@ button	{border:0; cursor:pointer}
 /* font */
 .f13 {font-size:13px}
 .f16 {font-size:16px; line-height:18px;}
+
+@font-face {
+	font-family:'Feijoa';
+	src:url("../fonts/FeijoaWeb-Medium.woff") format("woff");
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face {
+	font-family:'Domaine';
+	src:url("../fonts/DomaineTextWeb-Regular.woff") format("woff");
+	font-weight:normal;
+	font-style:normal
+}
 
 /* title */
 h1.tit_l	{font-size: 63px;  letter-spacing: 0; line-height: 75px;  margin-bottom: 15px;}
