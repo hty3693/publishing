@@ -16,8 +16,18 @@
     <!-- //공통 JS -->
     <script type="text/javascript" src="js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.js"></script>
 </head>
 <body>
+
+<script>
+    //lazyload
+    $(function() {
+        $("img.lazy").lazyload({
+            effect : "fadeIn"
+        });
+    });
+</script>
 
 <div class="body_container relative">
     <header class="header push">
@@ -65,7 +75,7 @@
                     <div class="columns main_cont">
                         <div class="article">
                             <div class="item_img">
-                                <a href="#this"><img src="images/main/img_01.jpg" alt=""></a>
+                                <a href="#this"><img src="images/main/img_01.jpg" alt="" class="lazy" data-original="images/main/img_01.jpg" width="700px" height="700px"></a>
                             </div>
                             <div class="item_cont">
                                 <div class="item_list">
@@ -87,7 +97,7 @@
                         <div class="row row1">
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="images/main/img_02.jpg" alt=""></a>
+                                    <a href="#this"><img src="images/main/img_02.jpg" alt="" class="lazy" data-original="images/main/img_02.jpg"></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -105,7 +115,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="images/main/img_03.jpg" alt=""></a>
+                                    <a href="#this"><img src="images/main/img_03.jpg" alt="" class="lazy" data-original="images/main/img_03.jpg"></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -124,7 +134,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="images/main/img_04.jpg" alt=""></a>
+                                    <a href="#this"><img src="images/main/img_04.jpg" alt="" class="lazy" data-original="images/main/img_04.jpg"></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -145,7 +155,7 @@
                         <div class="row">
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="images/main/img_05.jpg" alt=""></span>
+                                    <span><img src="images/main/img_05.jpg" alt="" class="lazy" data-original="images/main/img_05.jpg"></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -163,7 +173,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="images/main/img_06.jpg" alt=""></span>
+                                    <span><img src="images/main/img_06.jpg" alt="" class="lazy" data-original="images/main/img_06.jpg"></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -182,7 +192,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="images/main/img_07.jpg" alt=""></span>
+                                    <span><img src="images/main/img_07.jpg" alt="" class="lazy" data-original="images/main/img_07.jpg"></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -203,7 +213,7 @@
                         <div class="row">
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="images/main/img_08.jpg" alt=""></span>
+                                    <span><img src="images/main/img_08.jpg" alt="" class="lazy" data-original="images/main/img_08.jpg"></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -221,7 +231,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="images/main/img_09.jpg" alt=""></span>
+                                    <span><img src="images/main/img_09.jpg" alt="" class="lazy" data-original="images/main/img_09.jpg"></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -240,7 +250,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="images/main/img_10.jpg" alt=""></span>
+                                    <span><img src="images/main/img_10.jpg" alt="" class="lazy" data-original="images/main/img_10.jpg"></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -263,6 +273,7 @@
                 <!-- //section01 -->
 
                 <script>
+                    //columns scroll
                     $(document).ready( function () {
                         var mainContHeight = $('.main_cont').height();
                         $('.vertical_cont').css({
@@ -350,6 +361,7 @@
                 <!-- //section02 -->
 
                 <script>
+                    //bxslider
                     $(document).ready( function () {
                         $('.slider01').bxSlider({
                             mode: 'fade',
@@ -363,6 +375,7 @@
                 <div class="parallax_wrap"></div>
 
                 <script>
+                    //parallax
                     $(document).ready(function(){
                         $('.parallax_wrap').parallax("50%", 0.3);
                     })
@@ -375,7 +388,7 @@
                     <div class="columns main_cont">
                         <div class="article">
                             <div class="item_img">
-                                <a href="#this"><img src="images/2_fashion/img_03.jpg" alt=""></a>
+                                <a href="#this"><img src="images/2_fashion/img_03.jpg" alt="" class="lazy" data-original="images/2_fashion/img_03.jpg"></a>
                             </div>
                             <div class="item_cont">
                                 <div class="item_list">
@@ -397,7 +410,7 @@
                     <div class="columns main_cont">
                         <div class="article">
                             <div class="item_img">
-                                <a href="#this"><img src="images/2_fashion/img_01.jpg" alt=""></a>
+                                <a href="#this"><img src="images/2_fashion/img_01.jpg" alt="" class="lazy" data-original="images/2_fashion/img_01.jpg"></a>
                             </div>
                             <div class="item_cont">
                                 <div class="item_list">
@@ -418,7 +431,7 @@
                     <div class="columns main_cont">
                         <div class="article">
                             <div class="item_img">
-                                <a href="#this"><img src="images/2_fashion/img_02.jpg" alt=""></a>
+                                <a href="#this"><img src="images/2_fashion/img_02.jpg" alt="" class="lazy" data-original="images/2_fashion/img_02.jpg"></a>
                             </div>
                             <div class="item_cont">
                                 <div class="item_list">
@@ -448,7 +461,7 @@
                         <div class="columns horizon_cont">
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="images/3_interior/img_01.jpg" alt=""></a>
+                                    <a href="#this"><img src="images/3_interior/img_01.jpg" alt="" class="lazy" data-original="images/3_interior/img_01.jpg"></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -469,7 +482,7 @@
                         <div class="columns horizon_cont">
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="images/3_interior/img_02.jpg" alt=""></a>
+                                    <a href="#this"><img src="images/3_interior/img_02.jpg" alt="" class="lazy" data-original="images/3_interior/img_02.jpg"></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -490,7 +503,7 @@
                         <div class="columns horizon_cont">
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="images/3_interior/img_03.jpg" alt=""></a>
+                                    <a href="#this"><img src="images/3_interior/img_03.jpg" alt="" class="lazy" data-original="images/3_interior/img_03.jpg"></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -511,7 +524,7 @@
                         <div class="columns horizon_cont">
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="images/3_interior/img_04.jpg" alt=""></a>
+                                    <a href="#this"><img src="images/3_interior/img_04.jpg" alt="" class="lazy" data-original="images/3_interior/img_04.jpg"></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -532,7 +545,7 @@
                         <div class="columns horizon_cont">
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="images/3_interior/img_05.jpg" alt=""></a>
+                                    <a href="#this"><img src="images/3_interior/img_05.jpg" alt="" class="lazy" data-original="images/3_interior/img_05.jpg"></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
