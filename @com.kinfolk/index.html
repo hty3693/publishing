@@ -60,7 +60,7 @@
         <div class="container">
             <div class="main">
                 <!-- section01 ::  -->
-                <div class="section section01">
+                <div class="module section01">
                     <div class="columns main_cont">
                         <div class="article">
                             <div class="item_img">
@@ -82,7 +82,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="columns">
+                    <div class="columns sub_cont">
                         <div class="row row1">
                             <div class="article">
                                 <div class="item_img">
@@ -260,6 +260,21 @@
                     </div>
                 </div>
                 <!-- //section01 -->
+
+                <script>
+                    $(document).ready( function () {
+                        var mainContHeight = $('.main_cont').height();
+                        $('.sub_cont').css({
+                            'height': mainContHeight
+                        });
+                    });
+                    $( window ).on( 'resize', function() {
+                        var mainContHeight = $('.main_cont').height();
+                        $('.sub_cont').css({
+                            'height': mainContHeight
+                        });
+                    });
+                </script>
 
             </div>
         </div>

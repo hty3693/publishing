@@ -172,6 +172,19 @@ button	{border:0; cursor:pointer}
 	font-style:normal
 }
 
+@font-face {
+	font-family:'Tw Cen W01 Light';
+	src:url("../fonts/Tw Cen W01 Light.woff") format("woff");
+	font-weight:normal;
+	font-style:normal
+}
+
+
+@font-face {
+	font-family:"Tw Cen W01 Medium";
+	src:url("../fonts/Tw Cen W01 Medium.woff") format("woff");
+}
+
 /* title */
 h1.tit_l	{font-size: 63px;  letter-spacing: 0; line-height: 75px;  margin-bottom: 15px;}
 h2.tit_m	{font-size: 42px;  letter-spacing: 0.025em; line-height: 50px;  margin-bottom: 20px;}
@@ -192,6 +205,8 @@ h2.tit_m	{font-size: 42px;  letter-spacing: 0.025em; line-height: 50px;  margin-
 	-webkit-transition-delay: 50ms;
 	transition-delay: 50ms;
 }
+.item_list a:hover {border:0;}
+.item_list a:hover:after {width:100%;}
 
 /* image */
 .item_img	{position:relative; background: #f2f2f2;}
