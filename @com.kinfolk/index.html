@@ -15,6 +15,7 @@
     <script type="text/javascript" src="js/libs/jquery-ui.js"></script>
     <!-- //공통 JS -->
     <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
 </head>
 <body>
 
@@ -64,7 +65,7 @@
                     <div class="columns main_cont">
                         <div class="article">
                             <div class="item_img">
-                                <a href="#this"><img src="http://placehold.it/710x710/" alt=""></a>
+                                <a href="#this"><img src="images/main/img_01.jpg" alt=""></a>
                             </div>
                             <div class="item_cont">
                                 <div class="item_list">
@@ -82,11 +83,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="columns sub_cont">
+                    <div class="columns vertical_cont">
                         <div class="row row1">
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="http://placehold.it/350x350/" alt=""></a>
+                                    <a href="#this"><img src="images/main/img_02.jpg" alt=""></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -104,7 +105,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="http://placehold.it/350x480/" alt=""></a>
+                                    <a href="#this"><img src="images/main/img_03.jpg" alt=""></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -123,7 +124,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <a href="#this"><img src="http://placehold.it/350x350/" alt=""></a>
+                                    <a href="#this"><img src="images/main/img_04.jpg" alt=""></a>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -144,7 +145,7 @@
                         <div class="row">
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="http://placehold.it/350x437/" alt=""></span>
+                                    <span><img src="images/main/img_05.jpg" alt=""></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -162,7 +163,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="http://placehold.it/350x350/" alt=""></span>
+                                    <span><img src="images/main/img_06.jpg" alt=""></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -181,7 +182,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="http://placehold.it/350x350/" alt=""></span>
+                                    <span><img src="images/main/img_07.jpg" alt=""></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -202,7 +203,7 @@
                         <div class="row">
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="http://placehold.it/350x525/" alt=""></span>
+                                    <span><img src="images/main/img_08.jpg" alt=""></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -220,7 +221,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="http://placehold.it/350x233/" alt=""></span>
+                                    <span><img src="images/main/img_09.jpg" alt=""></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -239,7 +240,7 @@
                             </div>
                             <div class="article">
                                 <div class="item_img">
-                                    <span><img src="http://placehold.it/350x350/" alt=""></span>
+                                    <span><img src="images/main/img_10.jpg" alt=""></span>
                                 </div>
                                 <div class="item_cont">
                                     <div class="item_list">
@@ -264,17 +265,294 @@
                 <script>
                     $(document).ready( function () {
                         var mainContHeight = $('.main_cont').height();
-                        $('.sub_cont').css({
+                        $('.vertical_cont').css({
                             'height': mainContHeight
                         });
                     });
                     $( window ).on( 'resize', function() {
                         var mainContHeight = $('.main_cont').height();
-                        $('.sub_cont').css({
+                        $('.vertical_cont').css({
                             'height': mainContHeight
                         });
                     });
                 </script>
+
+                <div class="module section02">
+                    <div class="row">
+                        <div class="columns">
+                            <div class="slider_wrap">
+                                <ul class="slider01">
+                                    <li><span><img src="images/1_weekend/slide/img_01.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_02.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_03.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_04.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_05.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_06.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_07.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_08.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_09.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_10.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_11.jpg" alt=""></span></li>
+                                    <li><span><img src="images/1_weekend/slide/img_12.jpg" alt=""></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="columns main_cont">
+                            <div class="module_title">
+                                THE WEEKEND SPECIAL
+                            </div>
+                            <div class="article">
+                                <div class="item_cont">
+                                    <div class="item_title">
+                                        <a href="#this">Issue Twenty-Three</a>
+                                    </div>
+                                    <div class="item_text">
+                                        <p>The spring issue of Kinfolk examines the nuances of free time, its rituals and rhythms and its capacity to reinvigorate. Rather than advising on how to fill 48 hours, the issue offers insight into why we should fill our weekends, and how doing so can lead to personal fulfillment.</p>
+                                    </div>
+                                    <div class="btn_wrap">
+                                        <a href="#this" class="btn_black">ORDER NOW</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="module_title">
+                            SELECTED STORIES FROM ISSUE TWENTY-THREE
+                        </div>
+                        <div class="slider_wrap">
+                            <ul class="slider02">
+<!--                                <li>
+                                    <div class="article">
+                                        <div class="item_img">
+                                            <span><img src="http://placehold.it/350x525/" alt=""></span>
+                                        </div>
+                                        <div class="item_cont">
+                                            <div class="item_list">
+                                                <ul>
+                                                    <li><a href="#this">ARTS & CULTURE</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="item_title">
+                                                <a href="#this">Traveling Stories</a>
+                                            </div>
+                                            <div class="item_text">
+                                                <p>“It’s the journey that counts” is a cliché that gets trundled out often. These five podcasts tests its validity.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>-->
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //section02 -->
+
+                <script>
+                    $(document).ready( function () {
+                        $('.slider01').bxSlider({
+                            mode: 'fade',
+                            auto: true,
+                            speed : 400
+                        });
+                    });
+                </script>
+
+                <!-- parallax -->
+                <div class="parallax_wrap"></div>
+
+                <script>
+                    $(document).ready(function(){
+                        $('.parallax_wrap').parallax("50%", 0.3);
+                    })
+                </script>
+
+                <div class="module section03">
+                    <div class="module_title">
+                        FASHION
+                    </div>
+                    <div class="columns main_cont">
+                        <div class="article">
+                            <div class="item_img">
+                                <a href="#this"><img src="images/2_fashion/img_03.jpg" alt=""></a>
+                            </div>
+                            <div class="item_cont">
+                                <div class="item_list">
+                                    <ul>
+                                        <li><a href="#this">FASHION</a></li>
+                                        <li><a href="#this">ISSUE 22</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item_title">
+                                    <a href="#this">Hot Under the Collar</a>
+                                </div>
+                                <div class="item_text">
+                                    <p>When the temperature drops, take shelter against the dreary days and cold nights with winter essentials.</p>
+                                    <p class="item_link"><a href="#this">READ MORE</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns main_cont">
+                        <div class="article">
+                            <div class="item_img">
+                                <a href="#this"><img src="images/2_fashion/img_01.jpg" alt=""></a>
+                            </div>
+                            <div class="item_cont">
+                                <div class="item_list">
+                                    <ul>
+                                        <li><a href="#this">FASHION</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item_title">
+                                    <a href="#this">Changing Seasons</a>
+                                </div>
+                                <div class="item_text">
+                                    <p>With the transcendence of seasons come different ways of inhabiting our individual spaces.</p>
+                                    <p class="item_link"><a href="#this">READ MORE</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns main_cont">
+                        <div class="article">
+                            <div class="item_img">
+                                <a href="#this"><img src="images/2_fashion/img_02.jpg" alt=""></a>
+                            </div>
+                            <div class="item_cont">
+                                <div class="item_list">
+                                    <ul>
+                                        <li><a href="#this">FASHION</a></li>
+                                        <li><a href="#this">ISSUE 22</a></li>
+                                    </ul>
+                                </div>
+                                <div class="item_title">
+                                    <a href="#this">Occupational Hazards</a>
+                                </div>
+                                <div class="item_text">
+                                    <p>A uniform has the power to command something of its wearer and, in turn, from the world.</p>
+                                    <p class="item_link"><a href="#this">READ MORE</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //section03 -->
+
+                <div class="module section04">
+                    <div class="module_title">
+                        INTERIORS
+                    </div>
+                    <div class="row">
+                        <div class="columns horizon_cont">
+                            <div class="article">
+                                <div class="item_img">
+                                    <a href="#this"><img src="images/3_interior/img_01.jpg" alt=""></a>
+                                </div>
+                                <div class="item_cont">
+                                    <div class="item_list">
+                                        <ul>
+                                            <li><a href="#this">INTERIORS</a></li>
+                                            <li><a href="#this">PARTNERSHIPS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="#this">Home Tour: Cleo and McShane Murnane</a>
+                                    </div>
+                                    <div class="item_text">
+                                        <p>Cleo and McShane Murnane invite us high above Los Angeles and into their hilltop home.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns horizon_cont">
+                            <div class="article">
+                                <div class="item_img">
+                                    <a href="#this"><img src="images/3_interior/img_02.jpg" alt=""></a>
+                                </div>
+                                <div class="item_cont">
+                                    <div class="item_list">
+                                        <ul>
+                                            <li><a href="#this">INTERIORS</a></li>
+                                            <li><a href="#this">ISSUE 21</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="#this">On Privacy</a>
+                                    </div>
+                                    <div class="item_text">
+                                        <p>The founding editor of Modern Farmer and Monocle reflects on the intense yearning for private spaces in our homes and workplaces.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns horizon_cont">
+                            <div class="article">
+                                <div class="item_img">
+                                    <a href="#this"><img src="images/3_interior/img_03.jpg" alt=""></a>
+                                </div>
+                                <div class="item_cont">
+                                    <div class="item_list">
+                                        <ul>
+                                            <li><a href="#this">INTERIORS</a></li>
+                                            <li><a href="#this">PARTNERSHIPS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="#this">Home Tour: Cleo and McShane Murnane</a>
+                                    </div>
+                                    <div class="item_text">
+                                        <p>Cleo and McShane Murnane invite us high above Los Angeles and into their hilltop home.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns horizon_cont">
+                            <div class="article">
+                                <div class="item_img">
+                                    <a href="#this"><img src="images/3_interior/img_04.jpg" alt=""></a>
+                                </div>
+                                <div class="item_cont">
+                                    <div class="item_list">
+                                        <ul>
+                                            <li><a href="#this">INTERIORS</a></li>
+                                            <li><a href="#this">ISSUE 21</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="#this">On Privacy</a>
+                                    </div>
+                                    <div class="item_text">
+                                        <p>The founding editor of Modern Farmer and Monocle reflects on the intense yearning for private spaces in our homes and workplaces.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns horizon_cont">
+                            <div class="article">
+                                <div class="item_img">
+                                    <a href="#this"><img src="images/3_interior/img_05.jpg" alt=""></a>
+                                </div>
+                                <div class="item_cont">
+                                    <div class="item_list">
+                                        <ul>
+                                            <li><a href="#this">INTERIORS</a></li>
+                                            <li><a href="#this">PARTNERSHIPS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="#this">Home Tour: Cleo and McShane Murnane</a>
+                                    </div>
+                                    <div class="item_text">
+                                        <p>Cleo and McShane Murnane invite us high above Los Angeles and into their hilltop home.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //section04 -->
 
             </div>
         </div>

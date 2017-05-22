@@ -106,8 +106,8 @@ textarea	{width:100%; padding:12px; border-top:1px solid #ccc; border-right:1px 
 
 /* size */
 .row	{max-width: 1560px; margin-left: auto; margin-right: auto;}
-.row::before, .row::after {content: ' ';  display: table;}
-.column, .columns {width: 100%; float: left; padding-left: 0.625rem; padding-right: 0.625rem;}
+.row::before, .row::after {content:'';  display:block; clear:both;}
+.column, .columns {width: 100%; float: left; padding-left: 0.625rem; padding-right: 0.625rem; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
 /* etc */
 .none	{display:none !important;}
