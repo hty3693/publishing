@@ -1,0 +1,25 @@
+{
+  "name": "publishing",
+  "version": "1.0.0",
+  "description": "kifork Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass -w ./@com.kinfolk/scss/ -o ./@com.kinfolk/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjcho145/publishing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yjcho145/publishing/issues"
+  },
+  "homepage": "https://github.com/yjcho145/publishing#readme",
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
+
+
