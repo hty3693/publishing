@@ -12,8 +12,15 @@
   -o-animation:#{$value};
   animation:#{$value};
 }
+
+@mixin animate-delay ($value){
+  -webkit-animation-delay:#{$value};
+  -moz-animation-delay:#{$value};
+  -o-animation-delay:#{$value};
+  animation-delay:#{$value};
+}
 @mixin keyframesubfix($title , $value) {
-    @-webkit-keyframes #{$title} #{$value}
+  @-webkit-keyframes #{$title} #{$value}
   @-moz-keyframes #{$title} #{$value}
   @-o-keyframes #{$title} #{$value}
   @-ms-keyframes #{$title} #{$value}
