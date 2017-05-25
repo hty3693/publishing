@@ -1,0 +1,150 @@
+//
+//@charset "utf-8";
+//
+
+@import 'variable.scss';
+@import 'mixin.scss';
+/************************************************************************
+ * 파일명	: common.scss
+ * 설명	: 공통 CSS
+ * 작성자	: heydey
+ * 작성일	: 2017.05.16
+************************************************************************/
+///* common */
+html, body	{background-color:#fff; overflow-x: hidden; font-family: "Feijoa", serif;}
+body, p, ul, ol, li, dl, dt, dd, form, table, th, td, fieldset, input, textarea, select, button, h1, h2, h3, h4, h5, h6, pre	{margin:0; padding:0; -webkit-text-size-adjust:none;}
+input, textarea, select, table, button	{color:#1a1a1a; font-family:Helvetica, Arial, sans-serif;}
+body	{font-family:Helvetica, Arial, sans-serif !important; color:#1a1a1a !important; margin:0 !important; font-size:15px; line-height:21px !important; background-color:#fff !important}
+fieldset, img	{border:0;}
+img, video, audio, object {max-width: 100%; height: auto;}
+table	{width:100%; border:none; border-collapse:collapse;}
+table tr th, table tr td	{border:none;}
+legend, caption	{visibility:hidden; width:0; height:0; font-size:0; line-height:0;}
+ul, ol, li	{list-style:none;}
+a	{color:#1a1a1a; text-decoration:none;}
+a:hover, a:focus {text-decoration: none;  outline: 0;}
+em	{font-style:normal;}
+form	{display:inline;}
+section, article, header, footer, nav, aside, hgroup	{display:block;}
+h1, h2, h3, h4, h5, h6	{font-family: "Domaine", serif; font-weight:normal;}
+p{margin:0 0 20px;}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+svg:not(:root) {
+  overflow: hidden;
+  background: red;
+}
+
+//믹스인 문법
+// @include transition('background 0.3s ease-out');
+
+/*변수선언*/
+$skip-nav-color: #fff;
+//반복문
+//
+//$maxcol: 13;
+//
+//@for $i from 1 through $maxcol {
+//  $colwidth : (100% / ($maxcol /$i));
+//  &.s#{$i}{
+//    width : $colwidth;
+//  }
+//  &.offset-s#{$i}{
+//    margin-left: $colwidth;
+//  }
+//  &.push-s#{$i}{
+//    left : $colwidth;
+//  }
+//  &.pull-s#{$i}{
+//    right : $colwidth
+//  }
+//}
+
+
+
+/* skip navigation */
+.skip_nav {
+  & a {
+    display:block;
+    position:absolute;
+    z-index:1000;
+    top:-1000em;
+    left:0;
+    padding:10px;
+    background-color:$skip-nav-color;
+
+    &:focus {
+      top:0;
+    }
+  }
+}
+
+/*-- form --*/
+input	{position:relative;}
+label	{vertical-align:middle;}
+input, textarea, img		{
+  border:none;
+  border-radius:0;
+  vertical-align:middle;
+  appearance: none;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+}
+
+@include placeholderColor(#808080);
+
+
+/* select */
+select	{
+  border:none;
+  border-radius:0;
+  vertical-align:middle;
+  -webkit-appearance: none;
+  appearance: none;
+  width:100%;
+  background:url($imsi-img-url) no-repeat right 50%;
+  vertical-align:middle;
+  &::-ms-expand {
+    display:none;
+  }
+}
+
+.hide {
+  @include transform('translateY(-77px) !important');
+}
+.show {
+  @include transform('translateY(0px) !important');
+}
+#container {
+  margin-top: 77px;
+}
+.fixed {
+  position: fixed;
+}
+div.article {
+
+}
+
+/* @keyframes duration | timing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+//animation: 3s ease-in 1s 2 reverse both paused slidein;
+img.lazy{
+  position: relative;
+  opacity: 0;
+  //@include transition('opacity 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);');
+  &.lazy-loaded {
+    @include animate('1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s forwards fadeIn');
+  }
+
+  &::after {
+    opacity: 0;
+
+  }
+}
+
+@include keyframesubfix('fadeIn', '{100% { opacity: 1 }}');
+
+
+
